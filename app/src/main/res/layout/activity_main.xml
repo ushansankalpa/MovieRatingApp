@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/new_back"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/regMovie"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="70dp"
+        android:onClick="moviesRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buttonregistermovie" />
+
+    <ImageView
+        android:id="@+id/disPlayMovie"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:onClick="displayMovies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regMovie"
+        app:srcCompat="@drawable/buttondisplaymovies" />
+
+    <ImageView
+        android:id="@+id/favMovie"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:onClick="favouriteMovie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disPlayMovie"
+        app:srcCompat="@drawable/buttonfavourites" />
+
+    <ImageView
+        android:id="@+id/editMovies"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:onClick="updateMovieDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favMovie"
+        app:srcCompat="@drawable/buttoneditmovies" />
+
+    <ImageView
+        android:id="@+id/searchMovies"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:onClick="searchOnMovies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMovies"
+        app:srcCompat="@drawable/button_search"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:paddingLeft="39dp"
+        android:paddingRight="39dp"/>
+
+    <ImageView
+        android:id="@+id/ratingMovies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rating_btn"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:onClick="ImbdRatingInMovies"/>
+
+</LinearLayout>
